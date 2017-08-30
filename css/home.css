@@ -1,0 +1,62 @@
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+#container .imageback {
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+#container .imageback .fullcover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#container .imageback .fullcover .table {
+  display: table;
+  margin: 0 auto;
+  position: relative;
+  min-width: 500px;
+  height: 100%;
+}
+#container .imageback .fullcover .cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+#container .imageback .fullcover .floatingtitle {
+  border: 2px solid white;
+  min-width: 20px;
+  padding: 20px;
+  color: white;
+  font-size: 34px;
+}
+#container .imageback .fullcover .continue {
+  cursor: pointer;
+  bottom: 30px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  width: 100px;
+  left: 50%;
+  margin-left: -50px;
+}
+#container .imageback .fullcover .arrowdown {
+  width: 0;
+  height: 0;
+  position: relative;
+  left: -4px;
+  bottom: -10px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 5px solid #ccc;
+}
