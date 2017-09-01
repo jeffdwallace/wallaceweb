@@ -12,6 +12,9 @@ html {
 ::-webkit-scrollbar-thumb {
   background: #FF0000;
 }
+#container {
+  color: white;
+}
 #container .imageback {
   background-size: cover;
   width: 100vw;
@@ -27,11 +30,27 @@ html {
   margin: 0 auto;
   position: relative;
   min-width: 500px;
+}
+#container .imageback .fullcover .tall {
   height: 100%;
 }
+#container .imageback .fullcover .row {
+  display: table-row;
+}
 #container .imageback .fullcover .cell {
+  column-span: 1;
   display: table-cell;
   vertical-align: middle;
+}
+#container .imageback .fullcover .two {
+  column-span: 2;
+}
+#container .imageback .fullcover .desc {
+  width: 400px;
+  padding-left: 20px;
+}
+#container .imageback .fullcover .desc .bigidea {
+  font-size: 24px;
 }
 #container .imageback .fullcover .floatingtitle {
   border: 2px solid white;
@@ -39,6 +58,9 @@ html {
   padding: 20px;
   color: white;
   font-size: 34px;
+}
+#container .imageback .fullcover .left {
+  text-align: left;
 }
 #container .imageback .fullcover .continue {
   cursor: pointer;
@@ -59,4 +81,10 @@ html {
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
   border-top: 5px solid #ccc;
+}
+#container .timeline {
+  display: inline-block;
+}
+#container .works {
+  display: none;
 }

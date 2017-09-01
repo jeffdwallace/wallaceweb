@@ -13,7 +13,7 @@ html {
 }
 
 #container {
-    
+    color:white;
     .imageback {
         background-size: cover;
         width: 100vw;
@@ -27,11 +27,29 @@ html {
                 margin: 0 auto;
                 position: relative;
                 min-width: 500px;
+            }
+            .tall{
+
                 height: 100%;
             }
+            .row{
+                display: table-row;
+                
+            }
             .cell {
+                column-span: 1;
                 display: table-cell;
                 vertical-align: middle;
+            }
+            .two{
+                column-span: 2;
+            }
+            .desc{
+                .bigidea{
+font-size: 24px;
+                }
+                width:400px;
+                padding-left:20px;
             }
             .floatingtitle {
                 border: 2px solid white;
@@ -39,6 +57,9 @@ html {
                 padding: 20px;
                 color: white;
                 font-size: 34px;
+            }
+            .left{
+                text-align: left;
             }
             .continue {
                 cursor: pointer;
@@ -61,5 +82,12 @@ html {
                 border-top: 5px solid #ccc;
             }
         }
+    }
+
+    .timeline{
+        display:inline-block;
+    }
+    .works{
+        display:none;
     }
 }

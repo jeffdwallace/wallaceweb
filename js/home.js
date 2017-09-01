@@ -12,11 +12,26 @@ $(function () {
 // });
 
     $('.continue').click(function () {
-        $("html, body").animate({ scrollTop: $(window).height() }, 1200);
+        
+        $("html, body").animate({ scrollTop: $(this).closest('.imageback').offset().top + $(window).height()  }, 1200);
 
         $(this).fadeOut(1200);
         
         $(this).fadeIn(1200);
         return false;
+    });
+
+    $('.timeline li').click(function(){
+        if (!$(this).hasClass('active'))
+        {
+            var $id = $(this).data('id');
+            $('.works').fadeOut();
+            
+            $('.works').each(function(){
+                if ($(this).attr('id')==$id){
+                    $(this).fadeIn();
+                }
+            });
+        }
     });
 });
